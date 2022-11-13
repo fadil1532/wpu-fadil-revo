@@ -364,8 +364,3 @@ button {
     border-color: buttonborder;
     border-image: initial;
 }
-.flex-container > div {
-    margin: 10px;
-    padding: 20px;
-    
-}
