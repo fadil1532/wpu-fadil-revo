@@ -10,11 +10,6 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-a:-webkit-any-link {
-    color: black;
-    cursor: pointer;
-    text-decoration: none
-}
 
 .container {
     width: 75%;
@@ -38,6 +33,23 @@ div {
     float: right;
 
 }
+
+.menu-tonggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+.menu-tonggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #7aa814;
+    border-radius: 3px;
+
+}
+
+
 nav {
     width: 100%;
     margin: auto;
@@ -55,6 +67,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    justify-content: space-between;
 
 
 }
@@ -64,14 +77,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color:rgb(10, 10, 10);
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px ;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #adfa06;
 
 }
 nav li button {
@@ -342,7 +357,7 @@ p {
     cursor: pointer;
     outline: none;
 }
-user agent stylesheet
+
 button {
     appearance: auto;
     writing-mode: horizontal-tb !important;
@@ -369,4 +384,17 @@ button {
     margin: 10px;
     padding: 20px;
     
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
 }
