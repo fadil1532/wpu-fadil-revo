@@ -1,7 +1,16 @@
+html,body{
+    overflow-x: hidden;
+}
+
 * {
     text-decoration: none;
     margin: 0%;
     padding: 0px;
+
+}
+
+.flex {
+    display: flex;
 }
 
 body {
@@ -42,6 +51,7 @@ div {
     justify-content: space-between;
     margin-top: 25px;
     position: relative;
+    margin-left: auto;
 
 }
 
@@ -72,7 +82,8 @@ nav {
     margin: auto;
     display: flex;
     line-height: 80px;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
     position: -webkit-sticky;
     top: 0;
     background: #ffffff;
@@ -140,6 +151,23 @@ nav li button {
 
 }
 
+@media screen and (max-width: 420px){
+    .cumi1 {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cumi1 {
+        width: 250px;
+        height: 250px;
+        margin-top: 100px;
+    }
+}
+
+
 h2 {
     display: block;
     font-size: 1.5em;
@@ -169,6 +197,17 @@ p {
     position: relative;
     background: #587e05;
 }
+@media screen and (max-width: 420px){
+    .text2 {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px){
+     .text2 {
+        width: 100%;
+    }
+}
+
 
 .row2 .text2 h2 {
     color: #fff;
@@ -433,3 +472,208 @@ button {
         transform: none;
     }
 }
+
+@media screen and (max-width: 420px){
+    .row2 .video video {
+        width: 95%;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row2 .video video {
+        margin-top: 80px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 16px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .row3 .text3 .gambar2 img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row3 .text3 .gambar2 img {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row3 .text3 .gambar2 img {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .row3 .gambar3 img#truck {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row3 .gambar3 img#truck {
+        width: 280px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row3 .gambar3 img#truck {
+        margin-top: 90px;
+        width: 380px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 420px) {
+    .row3 .gambar3 .text4 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row3 .gambar3 .text4 {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row4 h2#costumor {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .row4 .colom1 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .row4 .colom1 {
+        width: 43%;
+    }
+}
+@media screen and (max-width: 420px){
+    .row4 .colom2 {
+        width: 90%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row4 .colom2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .row4 .colom2 {
+        width: 43%;
+    }
+}
+@media screen and (max-width: 768px){
+    .row4 .last h2 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .row4 .last h2 {
+        font-size: 18px;
+        margin-block-start: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .row4 .last .btn button:nth-child(1) {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .row4 .last .btn button:nth-child(1) {
+        margin-right: 68px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row4 .last .btn button {
+        font-size: 11px;
+        width: 120px;
+        margin-top: 20px;
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row4 .last .btn button {
+        font-size: 13px;
+        width: 150px;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 360px){
+    .flex-container{
+            display:flex;
+            width: 100%;
+            flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px){
+    .flex-container{
+            display:flex;
+            width: 100%;
+            flex-direction: column !important;
+    }
+}
+@media screen and (max-width: 420px) {
+    .row4 .colom1 {
+        width: 90% !important;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row4 .colom1 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row4 .colom1 {
+        width: 43%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .row4 .colom2 {
+        width: 90% !important;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row4 .colom2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .row4 .colom2 {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .btn1 {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 420px) {
+    .btn2 {
+        width: 100% !important;
+    }
+}
+
